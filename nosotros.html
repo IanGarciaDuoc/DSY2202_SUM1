@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Nosotros</title>
+</head>
+<body>
+  <header class="header" id="nosotros-header">
+    <div class="menu container">
+        <a href="index.html" class="logo text-decoration-none">VINACHOS</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="images/menu.png" class="menu-icono" alt="menu" />
+        </label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">contacto</a></li>
+            <li id="adminMenuItem"><a href="usuarios.html">Usuarios</a></li>
+          </ul>
+        </nav>
+        <div>
+            <ul>
+              <li class="submenu">
+                  <img src="images/car.svg" id="img-carrito" alt="carrito" />
+                  <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <div id="total-carrito">Total: $0</div>
+                        <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        <a href="#" id="pagar" class="btn-2">Pagar</a>
+                  </div>
+              </li>
+            </ul>
+        </div>
+        <!-- Elemento para mostrar el nombre del usuario -->
+        <div id="user-info" class="user-info"></div>
+        <button id="logout-button" style="cursor: pointer;">X</button>
+    </div>
+  </header>
+
+  <section class="blog container">
+    <div class="blog-entry">
+      <img src="images/nosotros.jpg" alt="Blog 1">
+      <div class="entry-content">
+          <h3>Nosotros</h3>
+          <p>nos dedicamos a descubrir y seleccionar los mejores vinos, combinando tradición con una visión 
+            moderna de la viticultura. Nuestra misión es llevar a tu mesa vinos de alta calidad que destacan por su autenticidad y carácter.
+            Cada botella de Vinacho es un homenaje a la rica herencia vitivinícola y a la innovación enológica, diseñada para complacer paladares
+            que buscan experiencias genuinas y memorables. Únete a la familia Vinacho y eleva tus momentos especiales con nuestros vinos selectos, perfectos para cada ocasión..</p>
+      </div>
+    </div>
+
+    <div class="blog-entry">
+      <img src="images/mision.jpg" alt="Blog 1">
+      <div class="entry-content">
+          <h3>mision</h3>
+          <p>Nuestra misión en Vinacho es ofrecer vinos excepcionales que encanten los sentidos y celebren la riqueza del terroir. Nos comprometemos a seleccionar meticulosamente vinos que no solo respeten la tradición vitivinícola, sino que también promuevan prácticas sostenibles y responsables. Aspiramos a conectar a nuestros clientes con la cultura del vino a través de experiencias educativas y degustaciones que inspiren aprecio y pasión por el vino..</p>
+      </div>
+    </div>
+    <div class="blog-entry">
+      <img src="images/vision.jpg" alt="Blog 1">
+      <div class="entry-content">
+          <h3>vision</h3>
+          <p>En Vinacho, nuestra visión es ser reconocidos como una referencia en la industria vitivinícola por nuestra integridad, innovación y compromiso con la calidad. Nos proponemos expandir nuestra presencia en el mercado global, introduciendo los paladares del mundo a la diversidad y riqueza de los vinos. Al mirar hacia el futuro, buscamos innovar continuamente y adaptarnos a las nuevas tendencias y demandas del mercado, manteniendo siempre el respeto por nuestro legado y el medio ambiente.
+
+            Espero que estos ejemplos te sean útiles y puedan ser el punto de partida para reflejar los verdaderos valores y aspiraciones de Vinacho. Si hay algún aspecto particular que te gustaría incluir o modificar, házmelo saber para personalizar aún más estas declaraciones.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content container">
+      <div class="link">
+          <h3>Enlaces</h3>
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+      </div>
+      <div class="link">
+          <h3>Redes Sociales</h3>
+          <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+          </ul>
+      </div>
+      <div class="link">
+          <h3>Contacto</h3>
+          <ul>
+              <li>Amunategui 178, 5to piso, Santiago-Chile</li>
+              <li>Teléfono: +562 5406211</li>
+              <li>contacto@vinachos.cl</li>
+          </ul>
+      </div>
+    </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/index.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/user-info.js"></script> <!-- Incluir el script para mostrar el nombre del usuario -->
+  <script src="js/admin-acces.js"></script>
+</body>
+</html>

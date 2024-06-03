@@ -1,0 +1,939 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'poppins',sans-serif;
+    max-width: 100%;
+    align-items: center;
+    flex-direction: column;
+
+}
+.wrapper {
+    flex: 1;  /* Esto hará que el contenido se expanda ocupando todo el espacio disponible, empujando el footer hacia abajo */
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+
+    display: flex;
+    align-items: center;
+    min-height: 88vh;
+    background-color: #f5f5f5;
+    padding: 70px;
+}
+
+
+.menu{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex  ;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.logo{
+font-size: 25px;
+color: #111111;
+text-transform: uppercase;
+font-weight: 800;
+text-decoration: none; 
+
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: #111111; /* Confirma que no hay subrayado al pasar el ratón */
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+
+}
+#nosotros-header {
+    display: flex;
+    align-items: center;
+    min-height: auto; /* Ajusta la altura según tus necesidades */
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-decoration: none;
+}
+#contacto-header {
+    display: flex;
+    align-items: center;
+    min-height: auto; /* Ajusta la altura según tus necesidades */
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #111111;
+}
+
+#menu{
+
+    display: none;
+}
+.menu-icono{
+
+    width: 25px;
+}
+
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.submenu{
+    position: relative;
+}
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4b5076;
+    padding: 20PX;
+    min-width: 400px;
+}
+
+table{
+    width: 100%;
+}
+th, td{
+
+    color:#ffffff ;
+}
+.borrar{
+
+    background-color: #111111;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 0 200px;
+
+
+}
+
+.header-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-txt h1{
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #111111;
+    font-family: 'oswald',sans-serif;
+    margin-bottom: 15px;
+}
+.header-txt p{
+
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn-1{
+
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Suaviza la transición del cambio de color */
+}
+.btn-1:hover {
+    background-color: #bc2020;  /* Color de fondo al pasar el ratón */
+    color:#ffffff;             /* Opcional: cambia el color de texto si es necesario */
+}
+
+
+.ofert{
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}    
+.ofert-1{
+    display: flex;
+    align-items: center;
+    flex-basis: calc(33.3% - 15px);
+    padding: 35px;
+}
+
+.ofert-img{
+
+    flex-basis: 50%;
+    margin-right: 15px;
+}
+
+.ofert-img img {
+    width: 250px;
+    }
+.ofert-txt{
+    flex-basis: 50%;
+    text-align: center;
+
+}
+.ofert-txt h3{
+    color:#111111;
+    font-family:'Oswald',sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.btn-2{
+
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: #111111;
+    color:#ffffff ;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+.btn-2:hover {
+    background-color: #bc2020;  /* Color de fondo al pasar el ratón */
+    color:#ffffff;   
+}
+.products{
+padding: 50px;
+text-align: center;
+}
+
+.products h2{
+    color: #111111;
+    font-family:'Oswald',sans-serif; ;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+
+.product-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px
+
+}
+.product{
+    width: 300px;
+    
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+
+}
+
+
+
+.product img{
+    width: 250px;
+    height: 350px;
+    margin-bottom: 20px;
+
+}
+
+
+.product h3{
+font-size: 20px;
+color: #111111;
+font-family:'Oswald',sans-serif; 
+text-transform: uppercase;
+margin-bottom: 15px;
+}
+
+.product p, .precio{
+    font-size: 16px ;
+    color: #111111;
+    margin-bottom: 15px;
+    
+}
+.precio {
+    font-weight: 800;
+}
+
+.icons{
+    padding: 50px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icon-1{
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #f5f5f5;
+
+}
+
+.icon-txt h3{
+    font-size: 20px;
+    color: #111111;
+    font-family:'Oswald',sans-serif;
+    text-transform: uppercase;
+
+}
+
+.icon-txt {
+    font-size: 16px;
+    color: #111111;    
+
+}
+.blog {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:100px ;
+}
+
+.blog-1{
+
+    flex-basis: calc(33.3% - 30px);
+}
+
+.blog-2{
+
+    flex-basis: calc(33.3% - 30px);
+}
+
+.blog-1 img {
+    margin-bottom: 20px;
+}
+
+.blog-2 img {
+    margin-bottom: 20px;
+}
+
+.blog-1 h3{
+    font-size: 20px;
+    color: #111111;
+    font: 'Oswald',sans-serif; 
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    
+}
+
+.blog-2 h3{
+    font-size: 20px;
+    color: #111111;
+    font: 'Oswald',sans-serif; 
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    
+}
+
+.blog-1 p {
+    font-size: 16px;
+    color: #111111;
+}
+
+.blog-2 p {
+    font-size: 16px;
+    color: #111111;
+}
+
+.footer{
+    width: 100%;
+    padding: 20px;
+    background-color: #111111;
+    /* O 'fixed' si quieres que siempre esté visible al final de la ventana */
+    bottom: 0;
+    left: 0;
+}
+
+.footer-content{
+    display: flex;
+    color: #dcdcdcdc;; /* Esto establece el color del texto a blanco */
+    justify-content: space-between;
+    
+}
+.nt .link {
+    
+    color: #dcdcdcdc; /* Color del texto oscuro para contrastar con el fondo claro */
+    padding: 15px; /* Añade un poco de espacio alrededor del contenido */
+    border-radius: 5px; /* Opcional: bordes redondeados para un aspecto más suave */
+}
+.link h3{
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Oswald',sans-serif;;
+    text-transform: uppercase;
+    margin-bottom: px;
+}
+
+.link a{
+    font-size: 18px;
+    color: #dcdcdcdc;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 991px ){
+
+    .menu{
+
+        padding: 20px;
+    }
+
+    .menu label{
+
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+    .menu .navbar ul li {
+
+        width: 100%;
+    }
+    .menu ul li a{
+
+        color: #ffffff;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+
+    }
+    .logo{
+        display: none;
+    }
+    .submenu:hover #carrito {
+        min-width: 100%;
+    }
+
+    .header{
+        min-height: 0vh;
+
+    }
+    .header-content{
+        padding: 50px 0 ;
+        flex-direction: column;
+    }
+    .header-img{
+        display: none;
+
+    }
+    .header-txt{
+        flex-basis: 100%;
+        text-align: center;
+
+    }
+
+    .header-txt-h1{
+        font-size: 70px;
+    }
+    .ofert{
+        padding: 30px 30px 0 30px;
+        flex-direction: column;
+    }
+    .ofert-1{
+    margin-bottom: 30px;
+    }
+    .products{
+        padding: 0 30px 30px 30px;
+    }
+    .products h2{
+
+        margin-bottom: 30px;
+    }
+    .product-content{
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }.product img{
+        width: 200px;
+        height: 280px;
+    }
+    .icons{
+        padding: 30px;
+        flex-direction: column;
+
+    }
+    .icon-1{
+        margin-bottom: 30px;
+    }
+
+    .blog{
+        padding: 0 30px 30px 30px;
+        flex-direction: column;
+    }
+    .blog-1{
+        margin-bottom: 30px;
+
+    }
+    .footer{
+        padding: 30px;
+
+    }
+    .footer-content{
+        flex-direction: column;
+        text-align: centers;
+    }
+} 
+
+
+/* Estilos base para contenedores de formularios */
+.form-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Estilos específicos para el formulario de login */
+.login-container input[type="email"],
+.login-container input[type="password"],
+.login-container input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 24px);
+}
+
+.login-container input[type="submit"] {
+    background-color: #111111;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #bc2020;
+}
+
+/* Estilos específicos para el formulario de registro */
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"],
+.register-container input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 24px);
+}
+
+.register-container input[type="submit"] {
+    background-color: #111111;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-container input[type="submit"]:hover {
+    background-color: #bc2020;
+}
+
+
+.form-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* Adecuado para formularios */
+    box-sizing: border-box; /* Asegura que padding no afecte el ancho total */
+    margin: 20px; /* Espacio alrededor para evitar tocar los bordes */
+}
+
+/* Estilos para formularios específicos no necesitan cambiar, se mantienen como están */
+
+/* Responsivo para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+        max-width: 90%; /* Más pequeño en dispositivos móviles */
+    }
+}
+
+
+
+/* Estilos específicos para la página de recuperación de contraseña */
+.password-recovery-container {
+    max-width: 400px; /* Mantiene el formulario estrecho y manejable */
+    margin: auto; /* Centra el formulario en la página */
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center; /* Centra el texto y los elementos del formulario */
+}
+
+.password-recovery-container input[type="email"],
+.password-recovery-container input[type="submit"] {
+    width: calc(100% - 20px); /* Ajusta el ancho tomando en cuenta el padding */
+    padding: 10px;
+    margin-top: 10px; /* Espacio entre los elementos del formulario */
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.password-recovery-container input[type="submit"] {
+    background-color: #111111;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.password-recovery-container input[type="submit"]:hover {
+    background-color: #333333; /* Efecto al pasar el mouse */
+}
+
+.password-recovery-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.password-recovery-container a:hover {
+    text-decoration: underline;
+}
+
+.password-recovery-container p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+/* Aplicar flexbox solo en los contenedores de formularios específicos */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura mínima del viewport para asegurar el centrado vertical */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* Adecuado para formularios */
+    text-align: center;
+    position: relative; /* Posicionamiento relativo dentro del flex container */
+}
+
+/* Manten los estilos específicos de tus formularios sin cambios */
+.login-container input[type="email"],
+.login-container input[type="password"],
+.login-container input[type="submit"],
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"],
+.register-container input[type="submit"],
+.password-recovery-container input[type="email"],
+.password-recovery-container input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 20px); /* Ajusta el ancho tomando en cuenta el padding */
+}
+
+.login-container input[type="submit"],
+.register-container input[type="submit"],
+.password-recovery-container input[type="submit"] {
+    background-color: #111111;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container input[type="submit"]:hover,
+.register-container input[type="submit"]:hover,
+.password-recovery-container input[type="submit"]:hover {
+    background-color: #333333; /* Cambio de color al pasar el mouse */
+}
+.form-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-recovery-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+
+
+.form-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* Fondo opcional para la página */
+}
+
+.password-recovery-container {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.custom-alert {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none; /* Oculto por defecto */
+}
+
+.custom-alert .close {
+    cursor: pointer;
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.blog-entry {
+    display: flex; /* Establece el contenedor como flexible */
+    align-items: flex-start; /* Alinea los ítems al inicio verticalmente */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    margin-bottom: 20px; /* Espacio entre entradas */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que los contenidos desborden */
+}
+
+.blog-entry img {
+    width: 40%; /* Ancho de la imagen dentro del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Elimina espacio debajo de la imagen */
+}
+
+.entry-content {
+    padding: 15px; /* Espacio interior alrededor del texto */
+    flex-grow: 1; /* Permite que el contenido de texto ocupe el espacio restante */
+    display: flex; /* Dispone el contenido en columna */
+    flex-direction: column; /* Organiza el título y el párrafo verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+}
+
+.entry-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+    font-size: 20px; /* Tamaño del título */
+    color: #333; /* Color del texto */
+    text-transform: uppercase;
+    
+}
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px; /* Ancho máximo para el formulario */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.password-recovery-container {
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .password-recovery-container {
+        padding: 2rem; /* Ajuste de padding para pantallas más grandes */
+    }
+}
+
+.btn-custom {
+    background-color: #111111; /* Color personalizado */
+    border-color: #111111; /* Color personalizado */
+    color: #f5f5f5;
+    width: 100px; /* Ancho personalizado */
+    margin: 0 auto;
+    display: block;
+}
+
+.btn-custom:hover {
+    background-color: #bc2020;   /* Color al pasar el mouse */
+    border-color: #f5f5f5;  
+    color: #f5f5f5;
+}
+
+/* Estilo para los enlaces */
+.login-link, .password-recovery a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Personalización del fondo de la alerta */
+.swal2-popup {
+    background-color: #f0f0f0 !important; /* Cambia el color de fondo */
+    color: #333 !important; /* Cambia el color del texto */
+}
+
+/* Personalización del título */
+.swal2-title {
+    color: #ff6347 !important; /* Cambia el color del título */
+}
+
+/* Personalización del texto del contenido */
+.swal2-content {
+    color: #555 !important; /* Cambia el color del texto del contenido */
+}
+
+/* Personalización del botón de confirmación */
+.swal2-confirm {
+    background-color: #4CAF50 !important; /* Cambia el color de fondo del botón */
+    color: #fff !important; /* Cambia el color del texto del botón */
+}
+
+/* Personalización del botón de cancelación */
+.swal2-cancel {
+    background-color: #f44336 !important; /* Cambia el color de fondo del botón */
+    color: #fff !important; /* Cambia el color del texto del botón */
+}
+/* Estilos para la tabla */
+.table thead th {
+    background-color: #343a40; /* Fondo de los encabezados */
+    color: #ffffff; /* Color del texto de los encabezados */
+}
+
+.table tbody tr {
+    background-color: #f8f9fa; /* Fondo de las filas */
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background-color: #e9ecef; /* Fondo de las filas impares */
+}
+
+.table tbody td {
+    color: #343a40; /* Color del texto de las celdas del cuerpo de la tabla */
+}
+
+.table tbody tr:hover {
+    background-color: #d6d8db; /* Fondo al pasar el ratón */
+}
+
+/* Estilos para los botones */
+.btn-warning {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    color: #ffffff;
+}
+
+.btn-warning:hover {
+    background-color: #e6b800;
+    border-color: #e6b800;
+}
+
+.btn-danger {
+    background-color: #ff4444;
+    border-color: #ff4444;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+
+/* Estilos para los campos del modal de edición */
+.modal-body .form-label {
+    color: #343a40; /* Cambia este color según tu preferencia */
+}
+
+.modal-body .form-control {
+    color: #343a40; /* Cambia este color según tu preferencia */
+}
+#logout-button {
+    border: none;
+    background-color: transparent;
+    color: #111111; /* Color rojo para indicar acción de cierre */
+    font-size: 16px; /* Tamaño del texto */
+    padding: 0 10px; /* Espaciado para fácil clic */
+}
+
+#logout-button:hover {
+    border: none;
+    background-color: transparent;
+    color: #cc0000; /* Color rojo para indicar acción de cierre */
+    font-size: 16px; /* Tamaño del texto */
+    padding: 10px; /* Espaciado para fácil clic */
+}
+
+#user-info span {
+    margin-right: 10px; /* Espaciado entre el nombre del usuario y el botón */
+}

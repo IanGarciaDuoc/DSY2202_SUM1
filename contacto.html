@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header" id="nosotros-header">
+        <div class="menu container">
+            <a href="index.html" class="logo text-decoration-none">VINACHOS</a>
+
+          <input type="checkbox" id="menu" />
+          <label for="menu">
+            <img src="images/menu.png" class="menu-icono" alt="menu" />
+          </label>
+          <nav class="navbar">
+            <ul>
+              <li><a href="index.html">inicio</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="contacto.html">contacto</a></li>
+              <li id="adminMenuItem"><a href="usuarios.html">Usuarios</a></li>
+            </ul>
+          </nav>
+          <div>
+            <ul>
+              <li class="submenu">
+                <img src="images/car.svg" id="img-carrito" alt="carrito" />
+                <div id="carrito">
+                  <table id="lista-carrito">
+                    <thead>
+                      <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                  <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="user-info" class="user-info"></div>
+        </div>
+    </div>
+</header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Contacto</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nombre *</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactNumber">Número contacto *</label>
+                        <input type="text" class="form-control" id="contactNumber" placeholder="Número de contacto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="companyName">Nombre empresa</label>
+                        <input type="text" class="form-control" id="companyName" placeholder="Nombre empresa">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom" id="sendButton" >Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Contactanos</h2>
+                <p>Bodega Fundo Tierruca s/n, Marchigue-Chile.</p>
+                <p>Oficinas Comerciales</p>
+                <p>Amunategui 178, 5to piso, Santiago-Chile</p>
+                <p>Email: contacto@vinachos.cl | Teléfono: +562 5406211</p>
+                <p>Email Ventas: ventas@vinachos.cl</p>
+                <img src="/images/contacto.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer class="footer">
+      <div class="footer-content container">
+        <div class="link">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Redes Sociales</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Contacto</h3>
+            <ul>
+                <li>Amunategui 178, 5to piso, Santiago-Chile</li>
+                <li>Teléfono: +562 5406211</li>
+                <li>contacto@vinachos.cl</li>
+            </ul>
+        </div>
+      </div>
+  </footer>
+      
+      
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Incluye jQuery y otros scripts necesarios para Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Incluye SweetAlert2 desde CDN antes de tu script personalizado -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Incluye tu script personalizado -->
+    <script src="js/contacto.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/prodcuto.js"></script>
+    <script src="js/validaciones.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/user-info.js"></script>
+    <script src="js/admin-acces.js"></script>
+</body>
+</html>

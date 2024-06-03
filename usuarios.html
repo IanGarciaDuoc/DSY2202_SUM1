@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Usuarios</title>
+</head>
+<body>
+    <div class="wrapper"> <!-- Wrapper para todo el contenido excepto el footer para aplicar sticky footer -->
+        <header class="header" id="nosotros-header">
+            <div class="menu container">
+                <a href="index.html" class="logo">VINACHOS</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="images/menu.png" class="menu-icono" alt="menu" />
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li id="adminMenuItem"><a href="usuarios.html">Usuarios</a></li>
+
+                    </ul>
+                </nav>
+                <div>
+                    <ul>
+                        <li class="submenu">
+                            <img src="images/car.svg" id="img-carrito" alt="carrito" />
+                            <div id="carrito">
+                                <table id="lista-carrito" class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <div id="total-carrito">Total: $0</div>
+                                <a href="#" id="vaciar-carrito" class="btn btn-secondary">Vaciar Carrito</a>
+                                <a href="#" id="pagar" class="btn btn-primary">Pagar</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="user-info" class="user-info"></div>
+                <button id="logout-button" style="cursor: pointer;">X</button>
+            </div>
+        </header>
+
+        <div class="container mt-5">
+            
+            <h2>Lista de Usuarios</h2>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createUserModal">Crear</button>
+            <br>
+            <br>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="userTableBody"></tbody>
+            </table>
+        </div>
+
+        <div class="modal fade" id="editUserModal" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editUserModalLabel">Editar Usuario</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="editUserForm">
+                            <input type="hidden" id="editUserId">
+                            <div class="mb-3">
+                                <label for="editName" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="editName" required autocomplete="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="editEmail" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="editEmail" required autocomplete="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="editPassword" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="editPassword" autocomplete="current-password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <!-- Modal para crear usuario -->
+    <div class="modal fade" id="createUserModal" tabindex="-1" aria-labelledby="createUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createUserModalLabel">Crear Nuevo Usuario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="createUserForm">
+                        <div class="mb-3">
+                            <label for="newUserName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="newUserName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newUserEmail" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="newUserEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newUserPassword" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="newUserPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Crear Usuario</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div> <!-- Cierre del wrapper -->
+
+    <footer class="footer">
+        <div class="footer-content container">
+          <div class="link">
+              <h3>Enlaces</h3>
+              <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="productos.html">Productos</a></li>
+                  <li><a href="nosotros.html">Nosotros</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+          </div>
+          <div class="link">
+              <h3>Redes Sociales</h3>
+              <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+              </ul>
+          </div>
+          <div class="link">
+              <h3>Contacto</h3>
+              <ul>
+                  <li>Amunategui 178, 5to piso, Santiago-Chile</li>
+                  <li>Teléfono: +562 5406211</li>
+                  <li>contacto@vinachos.cl</li>
+              </ul>
+          </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/usuarios.js"></script>
+    <script src="js/user-info.js"></script>
+    <script src="js/admin-acces.js"></script>
+
+</body>
+</html>

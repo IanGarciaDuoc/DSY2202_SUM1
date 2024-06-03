@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Productos</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html" class="logo">VINACHOS</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu" />
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">contacto</a></li>
+                    <li id="adminMenuItem"><a href="usuarios.html">Usuarios</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="carrito" />
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <div id="total-carrito">Total: $0</div>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                            <a href="#" id="pagar" class="btn-2">Pagar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Elemento para mostrar el nombre del usuario -->
+            <div id="user-info" class="user-info"></div>
+            <button id="logout-button" style="cursor: pointer;">X</button>
+        </div>
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="images/right2.png" alt="" />
+            </div>
+            <div class="header-txt">
+                <h1>productos</h1>
+                <p>mejores precio del pais</p>
+                <a href="productos.html" class="btn-1">Informacion</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f1.png" alt="" >
+            </div>
+            <div class="ofert-txt">
+                <h3>VINO TINTO PREMIUM</h3>
+                <a href="#" class="btn-2">Informacion</a>
+            </div>    
+        </div>
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f2.png" alt="" >
+            </div>
+            <div class="ofert-txt">
+                <h3>VINOS BLANCOS PREMIUM</h3>
+                <a href="#" class="btn-2">Informacion</a>
+            </div>    
+        </div>
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/f3.png" alt="" >
+            </div>
+            <div class="ofert-txt">
+                <h3>ESPUMANTES PREMIUM</h3>
+                <a href="#" class="btn-2">Informacion</a>
+            </div>    
+        </div>
+    </section>
+
+    <main class="products container" id="lista-1">
+        <h2>VENTAS PRODUCTO X UNIDAD</h2>
+        <div class="product-content">
+            <div class="product">
+                <img src="images/1.png" alt="" />
+                <div class="product-txt">
+                    <h3>elysium</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">$20000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/2.png" alt="" />
+                <div class="product-txt">
+                    <h3>elysium</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">$12000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/3.png" alt="" />
+                <div class="product-txt">
+                    <h3>elysium</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">$23000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/4.png" alt="" />
+                <div class="product-txt">
+                    <h3>elysium</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">$18000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/5.png" alt="" />
+                <div class="product-txt">
+                    <h3>elysium</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">$10000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/6.png" alt="" />
+                <div class="product-txt">
+                    <h3>elysium</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">$13500</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/10.png" alt="" />
+                <div class="product-txt">
+                    <h3>elysium</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">$20000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/20.png" alt="" />
+                <div class="product-txt">
+                    <h3>elysium</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">$12000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/30.png" alt="" />
+                <div class="product-txt">
+                    <h3>elysium</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">$98000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="9">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/40.png" alt="" />
+                <div class="product-txt">
+                    <h3>elysium</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">$40000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="10">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/50.png" alt="" />
+                <div class="product-txt">
+                    <h3>elysium</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">$65000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="11">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/60.png" alt="" />
+                <div class="product-txt">
+                    <h3>elysium</h3>
+                    <p>Calidad Premiun</p>
+                    <p class="precio">$45000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="12">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="icons container">
+        <div class="icon-1">
+            <div class="icon-txt">
+                <h3>NOTA IMPORTANTE</h3>
+                <p>
+                    ofrecemos una amplia selección de vinos premium al por mayor, perfectos para negocios que buscan calidad y variedad. Desde restaurantes hasta tiendas especializadas, proporcionamos excelencia en cada botella para satisfacer a tus clientes. Descubre cómo podemos ayudarte a enriquecer tu oferta y potenciar tu negocio.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Pago -->
+    <div class="modal fade" id="modalPago" tabindex="-1" aria-labelledby="modalPagoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPagoLabel">Formulario de Pago</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form-pago" class="form-pago">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección de Envío:</label>
+                            <input type="text" class="form-control" id="direccion" name="direccion" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tarjeta" class="form-label">Número de Tarjeta:</label>
+                            <input type="text" class="form-control" id="tarjeta" name="tarjeta" required>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="fecha-expiracion" class="form-label">Fecha de Expiración:</label>
+                                <input type="text" class="form-control" id="fecha-expiracion" name="fecha-expiracion" placeholder="MM/AA" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cvv" class="form-label">CVV:</label>
+                                <input type="text" class="form-control" id="cvv" name="cvv" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Realizar Pago</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content container">
+          <div class="link">
+              <h3>Enlaces</h3>
+              <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="productos.html">Productos</a></li>
+                  <li><a href="nosotros.html">Nosotros</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+          </div>
+          <div class="link">
+              <h3>Redes Sociales</h3>
+              <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">LinkedIn</a></li>
+              </ul>
+          </div>
+          <div class="link">
+              <h3>Contacto</h3>
+              <ul>
+                  <li>Amunategui 178, 5to piso, Santiago-Chile</li>
+                  <li>Teléfono: +562 5406211</li>
+                  <li>contacto@vinachos.cl</li>
+              </ul>
+          </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/user-info.js"></script>
+    <script src="js/admin-acces.js"></script>
+</body>
+</html>
